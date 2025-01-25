@@ -25,6 +25,7 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 # Kernel
 BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_CONFIG := lineageos_DDV_defconfig
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # Props
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
